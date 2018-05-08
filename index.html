@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+  <head>
+    <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>小布情书2 -时光密语</title>
+
+
+    <link rel="stylesheet" href="resource/code/animate.min.css" />
+    <link rel="stylesheet" href="resource/code/swiper.min.css" />
+
+    <style>
+      body{
+        margin: 0px;
+      }
+      .swiper-container{
+
+      }
+
+      .swiper-wrapper .swiper-slide{
+        background: blue;
+
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .background-container{
+        background-size: 100%;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        position:absolute
+
+      }
+
+      .background-too-low{
+        top : auto;
+        /* bottom : 5%; */
+        background-position: bottom;
+      }
+
+      .dynamic-info{
+        font-size: 50px;
+        color: hsl(20, 70%, 50%);
+        position: absolute;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="swiper-container" id="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- slide1 初始 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/1初识_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/1初识_无字.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/1初识_文字.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+        <!-- slide2 相遇的契机 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/2相遇的契机_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/2相遇的契机.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/2相遇的契机2.png);"
+               swiper-animate-effect="fadeInDown"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+        <!-- slide3 成长的点点滴滴 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/3成长的点点滴滴_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/3成长的点点滴滴.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani background-too-low"
+               style="background-image:url(resource/png/3成长的点点滴滴2.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+        <!-- slide4 阅读统计 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/4阅读统计_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/4阅读统计.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+
+               <img src="resource/png/4阅读统计2.png" style="width:100%;"/>
+               <p class="dynamic-info" id="book" style="right:10%;top:10%">
+                 《共产主义宣言》
+               </p>
+               <p class="dynamic-info" id="loan" style="right:10%;top:37%">
+                 32
+               </p>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- 上面的 共产主义宣言/32,下面的461是php需要填空的地方 -->
+
+
+
+        <!-- 第五张是最常去的图书馆,有信图 老图书馆 总图 工图 医图五种;
+        每一个的格式都和下面的这个div一样;然后我处于偷懒还没加另外四个,
+        php部分应该根据用户实际最常去的图书馆选择一个放在最终的网页上 -->
+
+
+
+
+        <!-- slide5 常去的图书馆 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/5常去的图书馆_信图_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/5常去的图书馆_信图.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+
+               <img src="resource/png/5常去的图书馆_信图2.png" style="width:100%;"/>
+               <p class="dynamic-info" id="freq" style="right:25%;">
+                 461
+               </p>
+          </div>
+        </div>
+
+        <!-- slide6 钻研习题 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/6钻研习题_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/6钻研习题.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/6钻研习题2.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+        <!-- slide7 开馆 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/7开馆_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/7开馆.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/7开馆2.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+
+        <!-- slides 8~11 渐变 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+             <div class="swiper-container" id="swiper-container2">
+               <div class="swiper-wrapper">
+
+                 <!-- slide8 金桂馥郁梧桐细雨 -->
+                 <div class="swiper-slide"
+                      style="background:hsl(200,80%,70%);">
+                   <div class="background-container"
+                        style="background-image:url(resource/background/8金桂馥郁梧桐细雨_无字.jpg);">
+                   </div>
+                   <div class="background-container ani"
+                        style="background-image:url(resource/png/8金桂馥郁梧桐细雨.png);"
+                        swiper-animate-effect="fadeIn"
+                        swiper-animate-duration="5s"
+                        swiper-animate-delay="0.3s">
+                   </div>
+                   <div class="background-container background-too-low ani"
+                        style="background-image:url(resource/png/8金桂馥郁梧桐细雨2.png);"
+                        swiper-animate-effect="fadeIn"
+                        swiper-animate-duration="1s"
+                        swiper-animate-delay="0s">
+                   </div>
+                 </div>
+
+                 <!-- slide9 傲梅娇艳冬雪暖阳 -->
+                 <div class="swiper-slide"
+                      style="background:hsl(200,80%,70%);">
+                   <div class="background-container"
+                        style="background-image:url(resource/background/9傲梅娇艳冬雪暖阳_无字.jpg);">
+                   </div>
+                   <div class="background-container"
+                        style="background-image:url(resource/png/9傲梅娇艳冬雪暖阳.png);">
+                   </div>
+                   <div class="background-container background-too-low"
+                        style="background-image:url(resource/png/9傲梅娇艳冬雪暖阳2.png);">
+                   </div>
+                 </div>
+
+                 <!-- slide10 早樱娇羞莺飞草长 -->
+                 <div class="swiper-slide"
+                      style="background:hsl(200,80%,70%);">
+                   <div class="background-container"
+                        style="background-image:url(resource/background/10早樱娇羞莺飞草长_无字.jpg);">
+                   </div>
+                   <div class="background-container"
+                        style="background-image:url(resource/png/10早樱娇羞莺飞草长.png);">
+                   </div>
+                   <div class="background-container background-too-low"
+                        style="background-image:url(resource/png/10早樱娇羞莺飞草长2.png);">
+                   </div>
+                 </div>
+
+                 <!-- slide11 夏荷田田碧波荡漾 -->
+                 <div class="swiper-slide"
+                      style="background:hsl(200,80%,70%);">
+                   <div class="background-container"
+                        style="background-image:url(resource/background/11夏荷田田碧波漾漾_无字.jpg);">
+                   </div>
+                   <div class="background-container"
+                        style="background-image:url(resource/png/11夏荷田田碧波漾漾.png);">
+                   </div>
+                   <div class="background-container background-too-low"
+                        style="background-image:url(resource/png/11夏荷田田碧波漾漾2.png);">
+                   </div>
+                 </div>
+               </div>
+             </div>
+        </div>
+
+        <!-- slide12 古今中外 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/background/12古今中外_无字.jpg);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/12古今中外.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="5s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/12古今中外2.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0s">
+          </div>
+        </div>
+
+        <!-- slide13 结语 -->
+        <div class="swiper-slide"
+             style="background:hsl(200,80%,70%);">
+          <div class="background-container"
+               style="background-image:url(resource/png/结语1.png);">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/结语2.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="0.3s">
+          </div>
+          <div class="background-container ani"
+               style="background-image:url(resource/png/结语3.png);"
+               swiper-animate-effect="fadeIn"
+               swiper-animate-duration="1s"
+               swiper-animate-delay="1s">
+          </div>
+        </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="resource/code/swiper.min.js"></script>
+    <script src="resource/code/swiper.animate1.0.3.min.js"></script>
+    <!-- <script src="resource/code/script.js"></script> -->
+
+    <script>
+
+    let get = function(id){
+      return document.getElementById(id)
+    }
+
+    let W = window.innerWidth;
+    let H = window.innerHeight;
+
+    // document.getElementById('swiper-container').style.height = H+'px';
+    // document.getElementById('swiper-container').style.width = W+'px';
+    //
+    // document.getElementById('swiper-container2').style.height = H+'px';
+    // document.getElementById('swiper-container2').style.width = W+'px';
+
+    get('swiper-container').style.height = H + 'px';
+    get('swiper-container').style.width  = W + 'px';
+    get('swiper-container2').style.height= H + 'px';
+    get('swiper-container2').style.width = W + 'px';
+
+    get('book').style.top = Math.floor(((W * 110)/(750*H))*100) + '%';
+    get('loan').style.top = Math.floor(((W * 430)/(750*H))*100) + '%';
+    get('freq').style.top = Math.floor(((W * 285)/(750*H)) * 100) + '%';
+
+
+
+    let mySwiper = new Swiper('#swiper-container',{
+      direction : 'vertical',
+      loop : false,
+      updateOnImagesReady : true,
+
+      on: {
+        init: function(){
+          swiperAnimateCache(this)
+          swiperAnimate(this)
+        },
+        slideChangeTransitionEnd: function(){
+          swiperAnimate(this)
+        },
+        imagesReady : function(){
+          console.log("readyyy!!");
+        }
+      },
+    })
+
+    let yourSwiper = new Swiper('#swiper-container2',{
+      direction : 'vertical',
+      loop : false,
+      effect : 'fade',
+      nested : true,
+
+      on: {
+        init: function(){
+          swiperAnimateCache(this)
+          swiperAnimate(this)
+        },
+        slideChangeTransitionEnd: function(){
+          swiperAnimate(this)
+        },
+      },
+    })
+
+    </script>
+  </body>
+</html>
